@@ -17,4 +17,3 @@ npm run css:lint
 ```js
 npm run css:fix
 ```
-Fix eslint-error
