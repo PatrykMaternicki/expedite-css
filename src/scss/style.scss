@@ -1,0 +1,35 @@
+@import './gui/index.scss';
+@import './atomic-design-components/organisms/offer';
+@import './atomic-design-components/molecules/card.scss';
+@import './atomic-design-components/molecules/userAction.scss';
+@import './atomic-design-components/atoms/button.scss';
+@import './atomic-design-components/atoms/input.scss';
+@import './atomic-design-components/atoms/link.scss';
+@import './atomic-design-components/atoms/progress';
+@import './atomic-design-components/atoms/cloud';
+
+@include organisms-offer;
+@include molecules-card;
+@include molecules-user-action;
+@include atoms-button;
+@include atoms-input;
+@include atoms-link;
+@include atoms-progress;
+@include atoms-cloud;
+
+/* Global resets */
+* {box-sizing: border-box; margin: 0; padding: 0;}
+body {font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif; color: #424242; line-height: 1.4;}
+
+/* Fonts */
+h1 {
+  font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.container {
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
+}

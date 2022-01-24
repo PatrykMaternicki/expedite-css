@@ -1,0 +1,10 @@
+@mixin molecules-user-action ($class-name: 'moleculesUserAction') {
+  .#{$class-name} {
+    display: flex;
+    justify-content: space-between;
+
+    .#{$class-name}__item {
+      width: 48%;
+    }
+  }
+}

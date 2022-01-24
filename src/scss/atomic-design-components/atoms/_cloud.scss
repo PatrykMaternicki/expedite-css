@@ -1,0 +1,33 @@
+@mixin atoms-cloud($class-name: 'atomsCloud') {
+    .#{$class-name} {
+      background-color: $color-black;
+      border-radius: 3px;
+      color: #fff;
+      padding: 1rem;
+      position: relative;
+
+      &:before {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $color-black;
+        bottom: -5px;
+        content: '';
+        height: 0; 
+        left: 85%;
+        position: absolute;
+        width: 0; 
+      }
+
+      .#{$class-name}__bold {
+        font-weight: 700;
+      }
+
+      .#{$class-name}__paragraph {
+        font-size: 0.75rem;
+
+        @include media-tablet-up {
+          font-size: 1rem;
+        }
+      }
+    }
+}

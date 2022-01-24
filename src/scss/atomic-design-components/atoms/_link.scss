@@ -1,0 +1,15 @@
+@mixin atoms-link($class-name: 'atomsLink') {
+  .#{$class-name} {
+    color: $color-blue;
+    display: inline-block;
+    font-size: 0.75rem;
+    font-style: italic;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+
+    @include media-tablet-up {
+      font-size: 1rem;
+    }
+  }
+}

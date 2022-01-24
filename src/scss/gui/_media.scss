@@ -1,0 +1,7 @@
+$media-tablet: 1024px;
+
+@mixin media-tablet-up {
+  @media all and (min-width: $media-tablet) {
+    @content;
+  }
+}

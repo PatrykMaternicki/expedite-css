@@ -1,0 +1,28 @@
+{
+  "name": "expedite-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css:watch": "node-sass src/scss/style.scss -wo dist",
+    "css:lint": "sass-lint 'src/scss/**/*.scss' --verbose --no-exit",
+    "css:fix": "sass-lint-auto-fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrykMaternicki/expedite-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrykMaternicki/expedite-css/issues"
+  },
+  "homepage": "https://github.com/PatrykMaternicki/expedite-css#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass-lint-auto-fix": "^0.21.2"
+  },
+  "devDependencies": {
+    "sass-lint": "^1.13.1"
+  }
+}

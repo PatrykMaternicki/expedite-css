@@ -1,0 +1,19 @@
+@mixin atoms-button($class-name: 'atomsButton') {
+    .#{$class-name} {
+      background-color: $color-light-grey;
+      border: 1px solid $color-light-grey;
+      border-radius: 3px;
+      color: $color-grey;
+      font-size: 0.75rem;
+      font-weight: 700;
+      height: 100%;
+      padding: 0.5rem 0;
+      text-align: center;
+      width: 100%;
+
+      &--success {
+        background-color: $color-green;
+        color: #fff;
+      }
+    }
+}

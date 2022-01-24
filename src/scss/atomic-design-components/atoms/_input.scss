@@ -1,0 +1,31 @@
+@mixin atoms-input($class-name: 'atomsInput') {
+    .#{$class-name} {
+      border: 1px solid $color-light-grey;
+      border-radius: 3px;
+      display: flex;
+      padding: 0.5rem 0 0.5rem 0.5rem;
+      text-align: left;
+      width: 100%;
+        
+      .#{$class-name}__label {
+        color: $color-grey;
+        font-weight: 700;
+      }
+
+      .#{$class-name}__input {
+        border: 0;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0 0.5rem;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+        }
+          
+        @include media-tablet-up {
+          font-size: 1rem;
+        }
+      }
+    }
+}
