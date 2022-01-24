@@ -2,18 +2,17 @@
 
 
 ## Commands
-
+- Watch css files.
 ```js
 npm run css:watch
 ```
 
-- Watch css files.
-
+- Run eslint tool
 ```js
 npm run css:lint
 ```
 
--Run eslint tool
+- Fix eslint-error
 
 ```js
 npm run css:fix
